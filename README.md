@@ -1,5 +1,4 @@
 # Hello Capture The Flag (CTF)
-=====
 
 ## tmux
 1. `ctrl+b :` to enter tmux command prompt
