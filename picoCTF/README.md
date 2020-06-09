@@ -23,8 +23,8 @@
 > source: [Maybe use tcpflow](https://osqa-ask.wireshark.org/questions/14811/follow-tcp-stream-with-tshark-still-can-not-in-batch-mode)
 
 ### wireshark filters 
-- `$ tcp or frame contains '{'`
-- `$ tcp or frame contains pico`
+- `tcp or frame contains '{'`
+- `tcp or frame contains pico`
 
 ### tshark commands
 - `$ tshark -r capture.pcap -Y "frame contains '{'"`
