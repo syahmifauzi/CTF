@@ -19,7 +19,7 @@
 ## To Look Back Later
 
 ### tshark batch mode
-- `$ for stream in `tshark -r follow_tcp.pcap -R "ip.addr eq 127.0.0.1 and tcp.port eq 5678" -T fields -e tcp.stream | sort -n -u`; do echo Stream: $stream; tshark -r follow_tcp.pcap -q -z follow,tcp,ascii,$stream; done`
+- `$ for stream in 'tshark -r follow_tcp.pcap -R "ip.addr eq 127.0.0.1 and tcp.port eq 5678" -T fields -e tcp.stream | sort -n -u'; do echo Stream: $stream; tshark -r follow_tcp.pcap -q -z follow,tcp,ascii,$stream; done`
 > source: [Maybe use tcpflow](https://osqa-ask.wireshark.org/questions/14811/follow-tcp-stream-with-tshark-still-can-not-in-batch-mode)
 
 ### wireshark filters 
@@ -28,7 +28,7 @@
 
 ### tshark commands
 - `$ tshark -r capture.pcap -Y "frame contains '{'"`
-- `$ tshark -r capture.pcap -Y 'frame contains pico'
+- `$ tshark -r capture.pcap -Y 'frame contains pico'`
 - `$ tshark -r capture.pcap -z follow,udp,ascii,10.0.0.2:5000,10.0.0.13:8888`
 
 ### tcpflow commands
