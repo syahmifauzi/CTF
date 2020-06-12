@@ -1,0 +1,11 @@
+file mystery
+pngcheck -vvctfp7 mystery
+strings mystery | grep -i 'IHDR\|IDAT\|PNG' 
+use bliss
+change PNG header
+change IHDR chunk
+change IDAT chunk
+change length of IDAT chunk
+change pHYs chunk (refer pngcheck)
+oeg mystery
+
