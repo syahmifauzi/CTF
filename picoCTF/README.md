@@ -15,7 +15,7 @@
 6. tcpflow
 7. [CyberChef](https://gchq.github.io/CyberChef/)
 8. pngcheck
-9. bliss (hexeditor alternative)
+9. bless (hexeditor alternative)
 
 ## To Look Back Later
 
